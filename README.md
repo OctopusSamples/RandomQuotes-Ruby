@@ -1,6 +1,9 @@
 Install Unicorn with `gem install unicorn`
+
 Start Unicorn with `unicorn -c unicorn.rb -E development`
+
 Save the following as `/etc/nginx/conf.d/sinatra.conf` (assumes this code is in `/opt/RandomQuotes-Ruby`):
+
 ```
 # use the socket we configured in our unicorn.rb
 upstream unicorn_server {
@@ -33,4 +36,7 @@ server {
     }
 }
 ```
+
 Run NGINX with `nginx -g 'daemon off;'`
+
+Open http://localhost:8080/index.html
