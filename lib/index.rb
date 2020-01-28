@@ -11,7 +11,7 @@ get '/api/quote' do
     "quote": "#{quotes[randomIndex]}",
     "author": "#{authors[randomIndex]}",
     "appVersion": "1.0.0",
-    "environmentName": "#{ENV["ENVIRONMENT_NAME"] ||= "Development"}"
+    "environmentName": "#{ENV["RACK_ENV"] ||= "Development"}"
   }
 EOF
 end
