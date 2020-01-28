@@ -1,6 +1,6 @@
 # set path to app that will be used to configure unicorn,
 # note the trailing slash in this example
-@dir = "/home/mcasperson/RandomQuotes-Ruby/"
+@dir = File.expand_path(File.dirname(__FILE__)) + "/"
 
 worker_processes 2
 working_directory @dir
