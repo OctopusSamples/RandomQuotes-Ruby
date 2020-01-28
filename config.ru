@@ -1,3 +1,3 @@
-require_relative "../lib/index"
+require_relative "./lib/index"
 
 run Sinatra::Application
