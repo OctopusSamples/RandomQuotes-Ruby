@@ -1,3 +1,3 @@
 runtime: ruby25
 service: randomquotes-ruby
-entrypoint: bundle exec unicorn -c /var/www/html/unicorn.rb
+entrypoint: bundle exec unicorn -c unicorn.rb
