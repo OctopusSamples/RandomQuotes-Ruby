@@ -1,3 +1,7 @@
 runtime: ruby27
 service: randomquotes-ruby
 entrypoint: bundle exec unicorn -c unicorn.rb
+
+handlers:
+  - url: /(.*\.(html|css|js))$
+    static_files: lib/public/\1
