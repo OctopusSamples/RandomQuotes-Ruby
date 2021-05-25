@@ -5,4 +5,4 @@ entrypoint: bundle exec rackup -s Unicorn -p $PORT
 handlers:
   - url: /(.*\.(html|css|js))$
     static_files: lib/public/\1
-    upload: public/.*\.(html|css|js)$
+    upload: lib/public/.*\.(html|css|js)$
