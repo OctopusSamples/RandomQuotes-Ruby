@@ -34,15 +34,20 @@ GEM
     unicorn (5.5.2)
       kgio (~> 2.6)
       raindrops (~> 0.7)
+    unicorn-rails (2.2.1)
+      rack
+      unicorn
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  rack
   rack-test (= 0.6.3)
   rspec (= 3.6.0)
   sinatra (= 2.0.2)
   unicorn (= 5.5.2)
+  unicorn-rails (= 2.2.1)
 
 BUNDLED WITH
    2.1.4
