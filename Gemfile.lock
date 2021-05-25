@@ -5,7 +5,9 @@ GEM
     kgio (2.11.3)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
-    rack (2.1.2)
+    rack (2.2.3)
+    rack-handlers (0.7.3)
+      rack
     rack-protection (2.0.2)
       rack
     rack-test (0.6.3)
@@ -42,7 +44,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  rack
+  rack (= 2.2.3)
+  rack-handlers (= 0.7.3)
   rack-test (= 0.6.3)
   rspec (= 3.6.0)
   sinatra (= 2.0.2)
