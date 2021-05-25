@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "unicorn", "5.5.2"
-gem "unicorn-rails"
+gem "unicorn-rails", "2.2.1"
 gem "sinatra", "2.0.2"
 
 group :test do
