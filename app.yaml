@@ -1,6 +1,6 @@
 runtime: ruby27
 service: randomquotes-ruby
-entrypoint: bundle exec unicorn -c unicorn.rb
+entrypoint: bundle exec rackup -s Unicorn -p $PORT
 
 handlers:
   - url: /(.*\.(html|css|js))$
