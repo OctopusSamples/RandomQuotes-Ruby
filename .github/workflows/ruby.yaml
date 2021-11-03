@@ -61,7 +61,7 @@ jobs:
          --version ${{ steps.determine_version.outputs.semVer }} \
          --format zip \
          --overwrite \
-         --include '**/*.rb \
+         --include '**/*.rb' \
          --include '**/*.html' \
          --include '**/*.htm' \
          --include '**/*.css' \
