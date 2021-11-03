@@ -8,6 +8,7 @@ jobs:
     - uses: actions/setup-ruby@v1
       with:
         ruby-version: '3.0'
+    - run: gem install bundler
     - name: Install GitVersion
       uses: gittools/actions/gitversion/setup@v0.9.7
       with:
