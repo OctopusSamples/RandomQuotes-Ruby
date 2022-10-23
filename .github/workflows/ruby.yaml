@@ -28,6 +28,9 @@ jobs:
       uses: OctopusDeploy/install-octopus-cli-action@v1
       with:
         version: latest
+    - name: Install Dependencies
+      run: bundle install
+      shell: bash
     - name: Test
       run: gem install rspec_junit_formatter; rspec --format RspecJunitFormatter --out results.xml
       shell: bash
