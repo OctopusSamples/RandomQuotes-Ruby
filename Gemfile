@@ -9,4 +9,5 @@ gem "rack-handlers", "0.7.3"
 group :test do
   gem "rspec", "3.6.0"
   gem "rack-test", "0.6.3"
+  gem "rspec_junit_formatter", "0.6.0"
 end
